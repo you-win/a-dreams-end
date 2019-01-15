@@ -4,6 +4,6 @@ export (PackedScene) var actor
 
 func _ready():
 	var instanced_actor = actor.instance()
-	instanced_actor.set_pos(self.position)
+	instanced_actor.position = self.position
 	
-	get_tree().root.add_child(instanced_actor)
+	get_tree().root.call_deferred("add_child", instanced_actor)
