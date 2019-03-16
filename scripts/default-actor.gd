@@ -1,13 +1,13 @@
 extends KinematicBody2D
 
-func _ready():
+func _ready() -> void:
 	
 	pass
 
-func _process(delta):
+func _process(delta : float) -> void:
 	
 	pass
 
-func _physics_process(delta):
+func _physics_process(delta : float) -> void:
 	
 	pass
