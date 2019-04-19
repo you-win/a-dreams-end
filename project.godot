@@ -8,15 +8,24 @@
 
 config_version=4
 
-_global_script_classes=[  ]
+_global_script_classes=[ {
+"base": "KinematicBody2D",
+"class": "Player",
+"language": "GDScript",
+"path": "res://actors/player/Player.gd"
+} ]
 _global_script_class_icons={
-
+"Player": ""
 }
 
 [application]
 
 config/name="A Dream's End"
 config/icon="res://assets/icon.png"
+
+[autoload]
+
+Constants="*res://utils/Constants.gd"
 
 [display]
 

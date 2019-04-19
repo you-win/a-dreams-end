@@ -1,0 +1,60 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://assets/placeholders/black-square.png" type="Texture" id=1]
+[ext_resource path="res://assets/placeholders/white-square.png" type="Texture" id=2]
+[ext_resource path="res://assets/placeholders/yellow-square.png" type="Texture" id=3]
+[ext_resource path="res://assets/placeholders/green-square.png" type="Texture" id=4]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 16.0037, 16.0008 )
+
+[node name="TestTileMap" type="Node2D"]
+
+[node name="Black" type="Sprite" parent="."]
+position = Vector2( 21.7286, 21.4779 )
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Black"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Black/StaticBody2D"]
+shape = SubResource( 1 )
+
+[node name="White" type="Sprite" parent="."]
+position = Vector2( 65.4578, 20.7482 )
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="White"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="White/StaticBody2D"]
+shape = SubResource( 1 )
+
+[node name="Yellow" type="Sprite" parent="."]
+position = Vector2( 108.068, 20.4077 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Yellow"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Yellow/StaticBody2D"]
+shape = SubResource( 1 )
+
+[node name="Green" type="Sprite" parent="."]
+position = Vector2( 147.663, 20.505 )
+texture = ExtResource( 4 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Green"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Green/StaticBody2D"]
+shape = SubResource( 1 )
+
