@@ -6,4 +6,4 @@ func _ready() -> void:
 	var instanced_actor = actor.instance()
 	instanced_actor.position = self.position
 	
-	get_tree().root.call_deferred("add_child", instanced_actor)
+	get_parent().call_deferred("add_child", instanced_actor)
