@@ -1,0 +1,20 @@
+{
+	"name": "Test World",
+	"description": "Test description",
+	"custom": false
+	"world": {
+		"h_size": 5,
+		"v_size": 5,
+		"starting_level": {
+			"h": 0,
+			"v": 0
+		}
+		"levels": [
+			["TestLevel", "", "", "", ""],
+			["", "", "", "", ""],
+			["", "", "", "", ""],
+			["", "", "", "", ""],
+			["", "", "", "", ""]
+		]
+	}
+}

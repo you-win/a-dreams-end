@@ -1,6 +1,6 @@
 extends Node2D
 
-var player : Node2D
+var player
 
 onready var c2d : Camera2D = $Camera2D as Camera2D
 
@@ -9,5 +9,4 @@ func _ready():
 
 func _process(delta: float) -> void:
 	if player == null:
-		player = find_node("Player")
-	
+		player = get_tree().root.find_node("Player", true, false)
