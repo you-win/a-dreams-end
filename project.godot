@@ -6,12 +6,32 @@
 ;   [section] ; section goes between []
 ;   param=value ; assign values to parameters
 
-config_version=3
+config_version=4
+
+_global_script_classes=[ {
+"base": "Node2D",
+"class": "LevelGrid",
+"language": "GDScript",
+"path": "res://utils/LevelGrid.gd"
+}, {
+"base": "KinematicBody2D",
+"class": "Player",
+"language": "GDScript",
+"path": "res://actors/player/Player.gd"
+} ]
+_global_script_class_icons={
+"LevelGrid": "",
+"Player": ""
+}
 
 [application]
 
 config/name="A Dream's End"
 config/icon="res://assets/icon.png"
+
+[autoload]
+
+Constants="*res://utils/Constants.gd"
 
 [display]
 
